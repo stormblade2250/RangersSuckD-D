@@ -1,0 +1,126 @@
+body {
+    font-family: 'Playfair Display';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#header-container {
+    text-align: justify;
+    white-space: pre-line; /* Preserve newline */
+    max-width: 800px; /* Adjust the max-width as needed */
+    padding: 20px; /* Add padding for spacing */
+    margin: 0 auto; /* Center horizontally */
+}
+
+h1 {
+    color: black;
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#one, #two, #three {
+    text-align: center;
+    color: black; /* Set the link color to black or your desired color */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+#wordCount{
+    text-align: center;
+    color: black; /* Set the link color to black or your desired color */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+#content-container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center horizontally */
+    text-align: justify;
+    padding: 20px;
+}
+
+#content-box {
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+p {
+    text-align: justify;
+    color: black;  
+}
+#blog
+{
+    font-family: 'Lora';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    color: black;
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    width: 50%;
+}
+
+#cam {
+    display: inline; /* Display the camera icon inline with the text */
+    vertical-align: middle; /* Align the camera icon vertically with the text */
+    margin-right: 5px; /* Adjust the right margin as needed */
+}
+
+#camref {
+    display: inline; /* Display the image reference text inline with the text */
+    vertical-align: middle; /* Align the text vertically with the camera icon */
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set the link color to black or your desired color */
+}
+
+span.superscript
+{
+    color: black; /* Set the link color to black or your desired color */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+/* Optionally, you can add a different color when the link is hovered */
+a:hover {
+    color: blue; /* Change the link color on hover to your desired color */
+}
+
+#ref
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+    color: black;
+}
+
+#ref2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    color: black;
+}
+.play-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 750px;
+  }
+
+  /* Style for the image within the button */
+  .play-button img {
+    width: 30px;
+    height: 30px;
+    
+  }

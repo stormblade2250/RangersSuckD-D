@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Note here -->
+<html lang="en">
+<head>
+    <script src="tts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="D&D Classes ranked by Harry Keogh">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>D&D Classes Ranked</title>
+    <link rel="icon" type="image/x-icon" href="dand.png">
+</head>
+<body>
+    <div id="header-container">
+        <h1>D&D Ranked</h1>
+    </div>
+    <button class="play-button" onclick="tts()">
+        <img id="playicon" src="play.png" alt="Play">
+    </button>
+    <img src="Party_Art.jpg" style="width:800px;height:450px;" alt="D&D">
+    <div>
+        <img id="cam" src="camera.png" style="width: 16px; height: 16px;" alt="Photo Icon">
+        <a id="camref" href="https://www.polygon.com/deals/21294556/dnd-how-to-play-dungeons-dragons-5e-guide-spells-dice-character-sheets-dm"><strong>Image Credits:</strong> <span class="superscript">Wizards of the Coast</span></a>
+    </div>
+    <p id="one">Harry Keogh</p>
+    <p id="wordCount"></p>
+    <p id="two"></p>
+    <div id="content-container">
+        <div id="content-box">
+            <p id="blog">
+                <!-- ... Your content goes here ... -->
+                
+
+Electric cars vs Hydrogen
+
+Recently we have seen the proliferation of electric cars across Australia, it seems that wherever you go there is a Tesla, and a slew of owners claiming that electric vehicles are the key to stopping climate change, but are electric cars really the best option?<br><br>
+Electric vehicles unlike traditional vehicles do not rely on combustion engines to run, instead they use large Lithium Ion or Lithium Iron Phosphate batteries (with Lithium Iron Phosphate being preferred as it is less likely to set fire in the event of a crash). this type of battery can also hold more energy than comparable Lithium Ion batteries, The motors on electric vehicles can also be used for regenerative breaking, which can recharge the battery while you drive.<br><br>
+Hydrogen vehicles despite Hydrogen being a gas. Are actually powered via electricity, with the difference being that Hydrogen is converted to electricity as needed inside of a “fuel cell” that takes in oxygen and hydrogen on two separate plates with a special material in the middle called a PEM (Proton Exchange Membrane) which allows only the transfer of protons and not gaseous particles, this means that batteries are not necessary which reduces overall cost, environmental impact, and weight, Hydrogen refuelling is also comparable to a gas car therefore reducing friction for everyday consumers to adopt this technology.<br><br>
+Electric vehicles however do have some down sides they are quite heavy, expensive and cause pollution, electric vehicles are also horrible for the environment as the production of its batteries leads to pollution in the intensive mining and refiner process of Lithium, Electric cars also have to charge for at least an hour (Tesla Model 3 on average) at a supercharger and 15-22 hours while at home, additionally electricity is not cheap, electric vehicles batteries also go bad every 8-10 years which requires the batteries to be replaced which is a somewhat costly and environmentally detrimental repair anywhere from $7,360 - $29,450 depending on your specific car, electric cars also cannot pull heavy loads such as caravans for a long trips with an electric car with 410km range going only 230 km on a full charge while pulling a modestly weighted caravan this effect also increases exponentially in electric cars.<br><br>
+
+However Hydrogen vehicles also have some big downsides, for instance the main problem with hydrogen cars currently is the transportation of Hydrogen and its safe storage as it is highly combustible, the infrastructure to refuel cars is also lack lustre or rather non-existent (Four fuelling stations in the entire of Australia) in Australia which would require new fuel stations to be built, however sodium hydride or sodium borohydride  could be used as a viable cost effective and safe way to transport hydrogen, this has also been mentioned in a paper by PowerBall Technologies LLC prepared for the US Department of Energy in 1999 in which they estimated that they could reduce the cost of Hydrogen from 5.3 per kg to 4.1 per kg USD, and make it safe to transport in trucks without any need for cooling, it’s worth noting that currently hydrogen is also relatively cheap in Australia with prices being between $4 - $6 per kg and considering that most hydrogen cars have a 5kg tank (Specifically the Toyota Mirai) it would cost anywhere from $16 - $24 to fill your tank, which would give you a range of 500km with this figure being hardly effected by weight and speed travelled, finally hydrogen tanks would also need to regularly replaced as Hydrogen corrodes metal quickly.<br><br>
+So, which of these would be better for Australia and its squadron of mad max four-wheel drives. The answer is both. Hydrogen in particular may be used more in trucks, aeroplanes, and boats, and industrial uses as it is very energy dense (35,000  Wh/kg (Watts per hour per kilogram) compared to Electric cars minuscule 200 – 300 Wh/kg) this means that Hydrogen doesn’t have increased weight when the range is increased which can be shown in this graph:
+Whereas electric cars will be used in more urban areas where people do not need to carry lots of weight, drive particularly fast or have much longer range and don’t mind the charging time that comes with lithium-ion batteries as well as being prepared to pay the cost to replace the batteries in the car every 8 – 10 years.<br><br>
+So, if Hydrogen has so little drawbacks why is it still in its infancy? This is simply due to the lack of infrastructure and the cost to build Hydrogen fuelling stations. Unlike regular fuelling stations which cost anywhere from 90k – 3.5 million to construct, a comparable Hydrogen stations typically start at 2 million at the low end, and for this reason and the lack of Hydrogen cars on the road, fuel companies find it hard to justify the investment, I believe that with adequate investment due to Hydrogen trucks and the use of sodium hydride crystals that are either converted to Hydrogen at the station, or in the car itself, in future fuel suppliers such as Shell and BP would likely have an incentive to build the infrastructure for the transport of hydrogen and the stations themselves for Hydrogen trucks.<br><br>
+
+
+            </p>
+            <script>
+                function countWords(str) {
+                    return str.split(/\s+/).filter(Boolean).length;
+                }
+                
+                function calculateReadingTime(words) {
+                    const wordsPerMinute = 200;
+                    const minutes = words / wordsPerMinute;
+                    return Math.ceil(minutes);
+                }
+                
+                const blogParagraph = document.getElementById("blog");
+                const paragraphText = blogParagraph.textContent;
+                const wordCount = countWords(paragraphText);
+                const readingTime = calculateReadingTime(wordCount);
+                document.getElementById("wordCount").textContent = `Word Count: ${wordCount}`;
+                document.getElementById("two").textContent = `${readingTime} min read`;
+                </script>
+        </div>
+    </div>
+</body>
+</html>
